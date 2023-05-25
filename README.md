@@ -1,4 +1,5 @@
-//проект копачева антона джава 2
+
+
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
@@ -9,8 +10,8 @@ import java.util.*;
 
 public class Main {
     //game constants
-    final String TITLE_OF_PROGRAM = "Classic Game Snake";
-    final String GAME_OVER_MSG = "GAME OVER";
+    final String TITLE_OF_PROGRAM = "змейка как в нокиа";
+    final String GAME_OVER_MSG = "хпхаххаха лузерGAME OVER<(";
     final int POINT_RADIUS = 20; // in pix
     final int FILLED_WIDTH = 30; //in point
     final int FILLED_HEIGHT = 20; // in point
@@ -26,8 +27,8 @@ public class Main {
     final int RIGHT = 39;
     final int DOWN = 40;
     final int START_DIRECTION = RIGHT;
-    final Color DEFAULT_COLOR = Color.blue;
-    final Color FOOD_COLOR = Color.green;
+    final Color DEFAULT_COLOR = Color.red;
+    final Color FOOD_COLOR = Color.blue;
     final Color POISON_COLOR = Color.red;
     Snake snake;
     Food food;
@@ -201,7 +202,7 @@ public class Main {
             food.paint(q);
             if (gameOver) {
                 q.setColor(Color.red);
-                q.setFont(new Font("Arial", Font.BOLD, 38));
+                q.setFont(new Font("хаххахаахахахахз", Font.BOLD, 38));
                 FontMetrics fm = q.getFontMetrics();
                 q.drawString(GAME_OVER_MSG, (FILLED_WIDTH * POINT_RADIUS + FILLED_DX - fm.stringWidth(GAME_OVER_MSG))/2, (FILLED_HEIGHT * POINT_RADIUS + FILLED_DY)/2);
             }
